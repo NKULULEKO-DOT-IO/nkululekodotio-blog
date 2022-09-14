@@ -1,0 +1,9 @@
+{
+    "short_name": "NKULULEKO DOT IO BLOG",
+    "name": "Get to know more about automation and software development",
+    "icons": [],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+}
