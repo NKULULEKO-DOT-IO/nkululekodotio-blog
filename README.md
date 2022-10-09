@@ -1,11 +1,21 @@
-# Sanity Blogging Content Studio
+# NKULULEKO DOT IO BLOG - WHERE WE SHARE OUR THOUGHTS
 
-Congratulations, you have now installed the Sanity Content Studio, an open source real-time content editing environment connected to the Sanity backend.
+## The Most Exciting Part Of The Nkululeko Dot Io Community
 
-Now you can do the following things:
 
-- [Read “getting started” in the docs](https://www.sanity.io/docs/introduction/getting-started?utm_source=readme)
-- Check out the example frontend: [React/Next.js](https://github.com/sanity-io/tutorial-sanity-blog-react-next)
-- [Read the blog post about this template](https://www.sanity.io/blog/build-your-own-blog-with-sanity-and-next-js?utm_source=readme)
-- [Join the community Slack](https://slack.sanity.io/?utm_source=readme)
-- [Extend and build plugins](https://www.sanity.io/docs/content-studio/extending?utm_source=readme)
+ This is a blog site which intend to share information and knowledge about software development, computer science, and design not leaving behind the latest and evolving technologies.
+
+ Our intention is to educate while also empowering young minds to innovate.
+
+ ### Project Description
+ 
+This project is created using React JS on the frontend and our blog posts are fully managed by sanity.io we use Firebase to store additional data.
+
+### Folder Structure
+
+* Backend
+    - Sanity.io Code 
+    - README.md included for installation and how to run
+* Frontend
+    - ReactJS Code 
+    - README.md included for installation and how to run

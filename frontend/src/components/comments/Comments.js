@@ -24,7 +24,7 @@ const Comments = ({slug}) => {
  })
   return (
     <>
-        <section className="comments">
+          <section className="comments  md:px-56 px-2 md:pt-12 pt-6 pb-4">
             <h1 className="Comments text-3xl">Comments</h1>
             {
                 comments && 

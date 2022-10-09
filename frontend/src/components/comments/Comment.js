@@ -31,7 +31,7 @@ const Comment = ({slug}) => {
     }
   return (
     <>
-    <section className="comment">
+          <section className="px-2 pt-6 pb-4 comment md:px-56 md:pt-12">
         <div>Post A Comment</div>
         <form action="" onSubmit={handleSubmit}></form>
     </section>
