@@ -49,14 +49,14 @@ export default function OnePost() {
         <>
         <section className="w-screen min-h-screen bg-gradient-to-b from-gray-100 via-gray-200 to-gray-400">
             <Navbar link="/" />
-                <div className="post md:px-56 px-2 md:pt-12 pt-6 pb-4">
-                    <h2 className="text-3xl pb-2">{postData.title}</h2>
+                <div className="px-2 pt-6 pb-4 post md:px-56 md:pt-12">
+                    <h2 className="pb-2 text-3xl">{postData.title}</h2>
 
-                    <div className="post-specs py-2">
+                    <div className="py-2 post-specs">
                         <div className="flex">
-                            <p className="mr-6 uppercase md:text-sm text-xs italic">Posted: <span className="date text-blue-800">{new Date(postData.publishedAt).toLocaleDateString()}</span></p>
+                            <p className="mr-6 text-xs italic uppercase md:text-sm">Posted: <span className="text-blue-800 date">{new Date(postData.publishedAt).toLocaleDateString()}</span></p>
                             <div className="flex">
-                                <p className="md:mr-6 mr-2 md:text-sm text-xs">Tags:</p>
+                                <p className="mr-2 text-xs md:mr-6 md:text-sm">Tags:</p>
                                 <div id="tags" className="flex gap-1.5 text-gray-800">
                                     {
                                         postData.categories.map((item, key) => {
@@ -66,9 +66,9 @@ export default function OnePost() {
                                 </div> 
                             </div>
                         </div>
-                        <p className="text-sm pt-2">Written by: <span className="capitalize font-semibold" style={{textTransform: "capitalize"}}>{postData.name}</span></p>
+                        <p className="pt-2 text-sm">Written by: <span className="font-semibold capitalize" style={{textTransform: "capitalize"}}>{postData.name}</span></p>
                     </div>
-                    <img className="w-full h-96 object-cover my-4" src={urlFor(postData.mainImage).url()} alt="" />
+                    <img className="object-cover w-full my-4 h-96" src={urlFor(postData.mainImage).url()} alt="" />
                     <div>
                         <BlockContent
                             blocks={postData.body}

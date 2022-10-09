@@ -26,43 +26,43 @@ const Footer = () => {
         console.log("Updated")
     }
   return (
-    <section className="bg-gray-100 w-screen flex flex-col items-center justify-center pt-8 pb-2">
-          <div className="news flex flex-col items-center justify-center w-full">
-              <h3 className="uppercase font-ligh text-xl">join our email list</h3>
+    <section className="flex flex-col items-center justify-center w-screen pt-8 pb-2 mt-10 bg-gray-100">
+          <div className="flex flex-col items-center justify-center w-full news">
+              <h3 className="text-xl uppercase font-ligh">join our email list</h3>
             <form action="" onSubmit={handleSubmit}>
-              <div className="mb- w-72 mt-2">
-                <label className="block text-gray-700 text-center text-sm mb-2">
+              <div className="mt-2 mb- w-72">
+                <label className="block mb-2 text-sm text-center text-gray-700">
                 Name
-                <input onChange={(e) => setUser({...user, name: e.target.value})} placeholder="Name" type="text" className="shadow form-textarea mt-1 block w-full border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+                <input onChange={(e) => setUser({...user, name: e.target.value})} placeholder="Name" type="text" className="block w-full px-3 py-2 mt-1 leading-tight text-gray-700 border rounded shadow form-textarea focus:outline-none focus:shadow-outline" />
                 </label>
             </div>
             <div className="mb-2 w-72">
-                  <label className="block text-gray-700 text-center text-sm mb-2">
+                  <label className="block mb-2 text-sm text-center text-gray-700">
                 Email
-                      <input required onChange={(e) => setUser({ ...user, email: e.target.value })} name="email" placeholder="Email" type="email" className="shadow form-textarea mt-1 block w-full border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+                      <input required onChange={(e) => setUser({ ...user, email: e.target.value })} name="email" placeholder="Email" type="email" className="block w-full px-3 py-2 mt-1 leading-tight text-gray-700 border rounded shadow form-textarea focus:outline-none focus:shadow-outline" />
                 </label>
             </div>
-              <input value="SEND" className="cursor-pointer bg-yellow-400 hover:bg-yellow-500 duration-500 w-72 text-gray-900 font-semibold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" />
+              <input value="SEND" className="px-4 py-2 font-semibold text-gray-900 duration-500 bg-yellow-400 rounded cursor-pointer hover:bg-yellow-500 w-72 focus:outline-none focus:shadow-outline" type="submit" />
               </form>
         </div>
-        <div className="social py-6 flex flex-col items-center">
-            <h3 className="uppercase text-xl font-light">Connect With Us</h3>
+        <div className="flex flex-col items-center py-6 social">
+            <h3 className="text-xl font-light uppercase">Connect With Us</h3>
             <div className="flex gap-5 pt-2 ">
-                <a className="hover:text-yellow-200 duration-300" href="https://www.facebook.com/nkululeko.io" >
+                <a className="duration-300 hover:text-yellow-200" href="https://www.facebook.com/nkululeko.io" >
                 <FontAwesomeIcon className="text-2xl" icon={faFacebook} />
                 </a>
-                  <a className="hover:text-yellow-200 duration-300" href="https://www.instagram.com/nkululeko.io/" >
+                  <a className="duration-300 hover:text-yellow-200" href="https://www.instagram.com/nkululeko.io/" >
                 <FontAwesomeIcon className="text-2xl" icon={faInstagram} />
                 </a>
-                  <a className="hover:text-yellow-200 duration-300" href="https://www.linkedin.com/company/nkululeko-dot-io" >
+                  <a className="duration-300 hover:text-yellow-200" href="https://www.linkedin.com/company/nkululeko-dot-io" >
                 <FontAwesomeIcon className="text-2xl" icon={faLinkedin} />
                 </a>
-                  <a className="hover:text-yellow-200 duration-300" href="https://www.youtube.com/channel/UCctr3zgUNRnH9VQoux-Qc1w" >
+                  <a className="duration-300 hover:text-yellow-200" href="https://www.youtube.com/channel/UCctr3zgUNRnH9VQoux-Qc1w" >
                 <FontAwesomeIcon className="text-2xl" icon={faYoutube} />
                 </a>
             </div>
         </div>
-          <p className="text-gray-900 text-xs">© Copyright {new Date().getFullYear()} | NKULULEKO DOT IO (PTY) LTD</p>
+          <p className="text-xs text-gray-900">© Copyright {new Date().getFullYear()} | NKULULEKO DOT IO (PTY) LTD</p>
     </section>
   )
 }

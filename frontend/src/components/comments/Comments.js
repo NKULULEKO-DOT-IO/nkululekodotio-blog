@@ -24,19 +24,23 @@ const Comments = ({slug}) => {
  })
   return (
     <>
-          <section className="comments  md:px-56 px-2 md:pt-12 pt-6 pb-4">
-            <h1 className="Comments text-3xl">Comments</h1>
+          <section className="px-2 pt-6 pb-2 comments md:px-56 md:pt-12">
+            <h1 className="text-3xl Comments">Comments</h1>
             {
-                comments && 
-                comments.map(() => {
-                    return <div className="comment">
-                        <p>Comment</p>
-                        <div className="name">
-                            <h1 className="name">Name</h1>
-                            <span>Posted</span>
+                (comments.length !== 0) ? (
+                    comments.map(() => {
+                        return <div className="comment">
+                            <p>Comment</p>
+                            <div className="name">
+                                <h1 className="name">Name</h1>
+                                <span>Posted</span>
+                            </div>
                         </div>
-                    </div>
-                })
+                    })
+                ) :
+                (
+                    <div className="flex justify-center w-4/6 py-6 mt-6 border rounded md:w-1/3">No Comments Yet</div>
+                )
             }
         </section>
     </>

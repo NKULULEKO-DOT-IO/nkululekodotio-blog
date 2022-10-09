@@ -54,10 +54,10 @@ export default function AllPosts() {
                                                 <p className="mr-6 italic uppercase">Posted: <span className="text-blue-800 date">{new Date(post.publishedAt).toLocaleDateString()}</span></p>
                                                 <div className="flex">
                                                     <p className="mr-6">Tags:</p>
-                                                    <div id="tags" className="flex gap-1.5 text-gray-800">
+                                                    <div id="tags" className="flex items-start gap-1.5 text-gray-800">
                                                         {
                                                             post.categories.map((item, key) => {
-                                                                return <p key={key} className="border border-gray-500 py-0.5 px-2 text-xs rounded-md">{item.title}</p>
+                                                                return <p key={key} className="border grow border-gray-500 py-0.5 flex-1 px-2 md:text-xs text-xs rounded-md">{item.title}</p>
                                                             })
                                                         }
 
